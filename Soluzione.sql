@@ -11,7 +11,7 @@ WHERE cfu > 10;
 -- Query 3
 SELECT *
 FROM students
-WHERE TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) > 30;
+WHERE TIMESTAMPDIFF(YEAR, date_of_bstirth, CURDATE()) > 30;
 
 -- Query 4
 SELECT *
@@ -38,4 +38,4 @@ FROM departments;
 SELECT COUNT(*) AS teachers_without_phone
 FROM teachers
 WHERE phone IS NULL
-   OR phone = '';
+OR phone = '';
